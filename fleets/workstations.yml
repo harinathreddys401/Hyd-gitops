@@ -190,10 +190,10 @@ software:
   # macOS custom packages
   packages: # Custom packages (if any)
     - path: ../platforms/macos/software/zoom.yml
-    self_service: true
-    setup_experience: true
-    categories:
-      - Communication
+      self_service: true
+      setup_experience: true
+      categories:
+        - Communication
     
 
     # Windows custom packages
