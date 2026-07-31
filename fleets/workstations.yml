@@ -95,7 +95,7 @@ controls:
   # Read more here:
   #   • https://fleetdm.com/guides/enforce-disk-encryption
   ###########################################################
-enable_disk_encryption: true
+  enable_disk_encryption: true
 
   ###########################################################
   # Managed OS updates
@@ -108,7 +108,6 @@ enable_disk_encryption: true
   #   • https://fleetdm.com/docs/configuration/yaml-files#windows-updates
   #   • https://fleetdm.com/guides/enforce-os-updates
   ###########################################################
-
 
   ###########################################################
   # Script library
