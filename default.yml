@@ -23,7 +23,11 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: IGI
+    org_name: IGI2
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/dc5bd24e-c16f-4647-a5ac-2b03d937d43b
 
   server_settings:
     ###########################################################
