@@ -1,0 +1,26 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# global-lables.yml
+#
+# Use this global manifest (`default.yml`) to configure
+# top-level settings for your organization as a whole, and
+# controls/reports/etc that apply to all of your fleets.
+#
+# To see all supported options, check out:
+#   • https://fleetdm.com/docs/configuration/yaml-files
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+- name : Department - Engineering
+  description: Hosts belonging to memebers of the Engineering department
+  label_membership_type: host_vitals
+  criteria:
+    vital: end_user_idp_department
+    value: Engineering
+
+
+- name: Uptime over 30 days
+  platform: darwin
+  description: Hosts with an uptime greater thabn 30 days
+  query: SELECT 1 FROM uptime WHERE days > 30
+  label_membership_type: dynamic
