@@ -28,6 +28,13 @@ controls:
   # windows_updates:
   #   deadline_days: 7
   #   grace_period_days: 2
+
+settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/dc5bd24e-c16f-4647-a5ac-2b03d937d43b
+      host_bath_size: 0
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
